@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-goDogRx/Pods-goDogRx-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

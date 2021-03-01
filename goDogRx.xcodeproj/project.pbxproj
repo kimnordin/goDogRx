@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CC9BF00561C8DBBCEEA9D5F /* Pods_goDogRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435DCAE9A88F140C2916577 /* Pods_goDogRx.framework */; };
+		F2B4BD1D25AE59BC003E524F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD1C25AE59BC003E524F /* AppDelegate.swift */; };
+		F2B4BD2425AE59BC003E524F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B4BD2225AE59BC003E524F /* Main.storyboard */; };
+		F2B4BD2625AE59BE003E524F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B4BD2525AE59BE003E524F /* Assets.xcassets */; };
+		F2B4BD2925AE59BE003E524F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B4BD2725AE59BE003E524F /* LaunchScreen.storyboard */; };
+		F2B4BD5725AE59F9003E524F /* SettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3425AE59F8003E524F /* SettingsState.swift */; };
+		F2B4BD5825AE59F9003E524F /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3525AE59F8003E524F /* NavigationState.swift */; };
+		F2B4BD5925AE59F9003E524F /* DogState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3625AE59F8003E524F /* DogState.swift */; };
+		F2B4BD5A25AE59F9003E524F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3725AE59F8003E524F /* State.swift */; };
+		F2B4BD5B25AE59F9003E524F /* SettingsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3A25AE59F8003E524F /* SettingsActions.swift */; };
+		F2B4BD5C25AE59F9003E524F /* DogActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3B25AE59F8003E524F /* DogActions.swift */; };
+		F2B4BD5D25AE59F9003E524F /* NavigationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3C25AE59F8003E524F /* NavigationActions.swift */; };
+		F2B4BD5E25AE59F9003E524F /* DeviceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD3D25AE59F8003E524F /* DeviceActions.swift */; };
+		F2B4BD5F25AE59F9003E524F /* DogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4025AE59F8003E524F /* DogController.swift */; };
+		F2B4BD6025AE59F9003E524F /* WalkHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4125AE59F8003E524F /* WalkHistoryCell.swift */; };
+		F2B4BD6125AE59F9003E524F /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B4BD4325AE59F8003E524F /* ColorCell.xib */; };
+		F2B4BD6225AE59F9003E524F /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4425AE59F8003E524F /* ColorCell.swift */; };
+		F2B4BD6325AE59F9003E524F /* ColorTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4525AE59F8003E524F /* ColorTableController.swift */; };
+		F2B4BD6425AE59F9003E524F /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4725AE59F8003E524F /* DogCell.swift */; };
+		F2B4BD6525AE59F9003E524F /* MyDogsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4825AE59F8003E524F /* MyDogsController.swift */; };
+		F2B4BD6625AE59F9003E524F /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4925AE59F8003E524F /* WelcomeController.swift */; };
+		F2B4BD6725AE59F9003E524F /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4B25AE59F8003E524F /* ProfileController.swift */; };
+		F2B4BD6825AE59F9003E524F /* NewDogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4D25AE59F8003E524F /* NewDogController.swift */; };
+		F2B4BD6925AE59F9003E524F /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD4F25AE59F8003E524F /* Dog.swift */; };
+		F2B4BD6A25AE59F9003E524F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD5025AE59F8003E524F /* Profile.swift */; };
+		F2B4BD6B25AE59F9003E524F /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD5125AE59F8003E524F /* Walk.swift */; };
+		F2B4BD6C25AE59F9003E524F /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD5325AE59F9003E524F /* AppReducer.swift */; };
+		F2B4BD6D25AE59F9003E524F /* NavigationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD5425AE59F9003E524F /* NavigationReducer.swift */; };
+		F2B4BD6E25AE59F9003E524F /* DogReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD5525AE59F9003E524F /* DogReducer.swift */; };
+		F2B4BD6F25AE59F9003E524F /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD5625AE59F9003E524F /* SettingsReducer.swift */; };
+		F2B4BD7C25AE5BDD003E524F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD7A25AE5BDD003E524F /* Extensions.swift */; };
+		F2B4BD7D25AE5BDD003E524F /* GestureRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD7B25AE5BDD003E524F /* GestureRecognizerManager.swift */; };
+		F2B4BD8025AE5BE3003E524F /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2B4BD7F25AE5BE3003E524F /* Colors.plist */; };
+		F2B4BD8425AE5CCE003E524F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD8325AE5CCE003E524F /* AppRouter.swift */; };
+		F2B4BD8725AE5CF0003E524F /* DogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4BD8625AE5CF0003E524F /* DogManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69FE09C7EC3FE68E52050935 /* Pods-goDogRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goDogRx.debug.xcconfig"; path = "Target Support Files/Pods-goDogRx/Pods-goDogRx.debug.xcconfig"; sourceTree = "<group>"; };
+		702755B10CB168CCA72903C1 /* Pods-goDogRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goDogRx.release.xcconfig"; path = "Target Support Files/Pods-goDogRx/Pods-goDogRx.release.xcconfig"; sourceTree = "<group>"; };
+		B435DCAE9A88F140C2916577 /* Pods_goDogRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goDogRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B4BD1925AE59BC003E524F /* goDogRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goDogRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B4BD1C25AE59BC003E524F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2B4BD2325AE59BC003E524F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2B4BD2525AE59BE003E524F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2B4BD2825AE59BE003E524F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2B4BD2A25AE59BE003E524F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B4BD3425AE59F8003E524F /* SettingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsState.swift; sourceTree = "<group>"; };
+		F2B4BD3525AE59F8003E524F /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		F2B4BD3625AE59F8003E524F /* DogState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogState.swift; sourceTree = "<group>"; };
+		F2B4BD3725AE59F8003E524F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		F2B4BD3A25AE59F8003E524F /* SettingsActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsActions.swift; sourceTree = "<group>"; };
+		F2B4BD3B25AE59F8003E524F /* DogActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogActions.swift; sourceTree = "<group>"; };
+		F2B4BD3C25AE59F8003E524F /* NavigationActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationActions.swift; sourceTree = "<group>"; };
+		F2B4BD3D25AE59F8003E524F /* DeviceActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceActions.swift; sourceTree = "<group>"; };
+		F2B4BD4025AE59F8003E524F /* DogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogController.swift; sourceTree = "<group>"; };
+		F2B4BD4125AE59F8003E524F /* WalkHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkHistoryCell.swift; sourceTree = "<group>"; };
+		F2B4BD4325AE59F8003E524F /* ColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
+		F2B4BD4425AE59F8003E524F /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		F2B4BD4525AE59F8003E524F /* ColorTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableController.swift; sourceTree = "<group>"; };
+		F2B4BD4725AE59F8003E524F /* DogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		F2B4BD4825AE59F8003E524F /* MyDogsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDogsController.swift; sourceTree = "<group>"; };
+		F2B4BD4925AE59F8003E524F /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		F2B4BD4B25AE59F8003E524F /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		F2B4BD4D25AE59F8003E524F /* NewDogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDogController.swift; sourceTree = "<group>"; };
+		F2B4BD4F25AE59F8003E524F /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		F2B4BD5025AE59F8003E524F /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F2B4BD5125AE59F8003E524F /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		F2B4BD5325AE59F9003E524F /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		F2B4BD5425AE59F9003E524F /* NavigationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationReducer.swift; sourceTree = "<group>"; };
+		F2B4BD5525AE59F9003E524F /* DogReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogReducer.swift; sourceTree = "<group>"; };
+		F2B4BD5625AE59F9003E524F /* SettingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
+		F2B4BD7A25AE5BDD003E524F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F2B4BD7B25AE5BDD003E524F /* GestureRecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerManager.swift; sourceTree = "<group>"; };
+		F2B4BD7F25AE5BE3003E524F /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
+		F2B4BD8325AE5CCE003E524F /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		F2B4BD8625AE5CF0003E524F /* DogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2B4BD1625AE59BC003E524F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC9BF00561C8DBBCEEA9D5F /* Pods_goDogRx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A959E1E8D5957A765C374F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B435DCAE9A88F140C2916577 /* Pods_goDogRx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B8006261B6259C2F8B58FDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69FE09C7EC3FE68E52050935 /* Pods-goDogRx.debug.xcconfig */,
+				702755B10CB168CCA72903C1 /* Pods-goDogRx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2B4BD1025AE59BC003E524F = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD1B25AE59BC003E524F /* goDogRx */,
+				F2B4BD1A25AE59BC003E524F /* Products */,
+				5B8006261B6259C2F8B58FDA /* Pods */,
+				46A959E1E8D5957A765C374F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2B4BD1A25AE59BC003E524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD1925AE59BC003E524F /* goDogRx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B4BD1B25AE59BC003E524F /* goDogRx */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD3925AE59F8003E524F /* Actions */,
+				F2B4BD3825AE59F8003E524F /* Middleware */,
+				F2B4BD4E25AE59F8003E524F /* Models */,
+				F2B4BD5225AE59F9003E524F /* Reducers */,
+				F2B4BD3325AE59F8003E524F /* State */,
+				F2B4BD3E25AE59F8003E524F /* Controllers */,
+				F2B4BD1C25AE59BC003E524F /* AppDelegate.swift */,
+				F2B4BD8325AE5CCE003E524F /* AppRouter.swift */,
+				F2B4BD2225AE59BC003E524F /* Main.storyboard */,
+				F2B4BD2525AE59BE003E524F /* Assets.xcassets */,
+				F2B4BD2725AE59BE003E524F /* LaunchScreen.storyboard */,
+				F2B4BD8625AE5CF0003E524F /* DogManager.swift */,
+				F2B4BD7F25AE5BE3003E524F /* Colors.plist */,
+				F2B4BD2A25AE59BE003E524F /* Info.plist */,
+				F2B4BD7825AE5BDD003E524F /* Util */,
+			);
+			path = goDogRx;
+			sourceTree = "<group>";
+		};
+		F2B4BD3325AE59F8003E524F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD3425AE59F8003E524F /* SettingsState.swift */,
+				F2B4BD3525AE59F8003E524F /* NavigationState.swift */,
+				F2B4BD3625AE59F8003E524F /* DogState.swift */,
+				F2B4BD3725AE59F8003E524F /* State.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		F2B4BD3825AE59F8003E524F /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		F2B4BD3925AE59F8003E524F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD3A25AE59F8003E524F /* SettingsActions.swift */,
+				F2B4BD3B25AE59F8003E524F /* DogActions.swift */,
+				F2B4BD3C25AE59F8003E524F /* NavigationActions.swift */,
+				F2B4BD3D25AE59F8003E524F /* DeviceActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F2B4BD3E25AE59F8003E524F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD3F25AE59F8003E524F /* Dog */,
+				F2B4BD4225AE59F8003E524F /* Color */,
+				F2B4BD4625AE59F8003E524F /* MyDogs */,
+				F2B4BD4925AE59F8003E524F /* WelcomeController.swift */,
+				F2B4BD4A25AE59F8003E524F /* Profile */,
+				F2B4BD4C25AE59F8003E524F /* NewDog */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2B4BD3F25AE59F8003E524F /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD4025AE59F8003E524F /* DogController.swift */,
+				F2B4BD4125AE59F8003E524F /* WalkHistoryCell.swift */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		F2B4BD4225AE59F8003E524F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD4325AE59F8003E524F /* ColorCell.xib */,
+				F2B4BD4425AE59F8003E524F /* ColorCell.swift */,
+				F2B4BD4525AE59F8003E524F /* ColorTableController.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		F2B4BD4625AE59F8003E524F /* MyDogs */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD4725AE59F8003E524F /* DogCell.swift */,
+				F2B4BD4825AE59F8003E524F /* MyDogsController.swift */,
+			);
+			path = MyDogs;
+			sourceTree = "<group>";
+		};
+		F2B4BD4A25AE59F8003E524F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD4B25AE59F8003E524F /* ProfileController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F2B4BD4C25AE59F8003E524F /* NewDog */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD4D25AE59F8003E524F /* NewDogController.swift */,
+			);
+			path = NewDog;
+			sourceTree = "<group>";
+		};
+		F2B4BD4E25AE59F8003E524F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD4F25AE59F8003E524F /* Dog.swift */,
+				F2B4BD5025AE59F8003E524F /* Profile.swift */,
+				F2B4BD5125AE59F8003E524F /* Walk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2B4BD5225AE59F9003E524F /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD5325AE59F9003E524F /* AppReducer.swift */,
+				F2B4BD5425AE59F9003E524F /* NavigationReducer.swift */,
+				F2B4BD5525AE59F9003E524F /* DogReducer.swift */,
+				F2B4BD5625AE59F9003E524F /* SettingsReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		F2B4BD7825AE5BDD003E524F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4BD7925AE5BDD003E524F /* GKImagePicker */,
+				F2B4BD7A25AE5BDD003E524F /* Extensions.swift */,
+				F2B4BD7B25AE5BDD003E524F /* GestureRecognizerManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F2B4BD7925AE5BDD003E524F /* GKImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GKImagePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2B4BD1825AE59BC003E524F /* goDogRx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B4BD2D25AE59BE003E524F /* Build configuration list for PBXNativeTarget "goDogRx" */;
+			buildPhases = (
+				7DC3EABFD989306304DD2615 /* [CP] Check Pods Manifest.lock */,
+				F2B4BD1525AE59BC003E524F /* Sources */,
+				F2B4BD1625AE59BC003E524F /* Frameworks */,
+				F2B4BD1725AE59BC003E524F /* Resources */,
+				21E5797A0851E74FCFD770A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = goDogRx;
+			productName = goDogRx;
+			productReference = F2B4BD1925AE59BC003E524F /* goDogRx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2B4BD1125AE59BC003E524F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					F2B4BD1825AE59BC003E524F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = F2B4BD1425AE59BC003E524F /* Build configuration list for PBXProject "goDogRx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2B4BD1025AE59BC003E524F;
+			productRefGroup = F2B4BD1A25AE59BC003E524F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2B4BD1825AE59BC003E524F /* goDogRx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2B4BD1725AE59BC003E524F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B4BD2925AE59BE003E524F /* LaunchScreen.storyboard in Resources */,
+				F2B4BD6125AE59F9003E524F /* ColorCell.xib in Resources */,
+				F2B4BD8025AE5BE3003E524F /* Colors.plist in Resources */,
+				F2B4BD2625AE59BE003E524F /* Assets.xcassets in Resources */,
+				F2B4BD2425AE59BC003E524F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E5797A0851E74FCFD770A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-goDogRx/Pods-goDogRx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-goDogRx/Pods-goDogRx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goDogRx/Pods-goDogRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DC3EABFD989306304DD2615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-goDogRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2B4BD1525AE59BC003E524F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B4BD6825AE59F9003E524F /* NewDogController.swift in Sources */,
+				F2B4BD7C25AE5BDD003E524F /* Extensions.swift in Sources */,
+				F2B4BD5725AE59F9003E524F /* SettingsState.swift in Sources */,
+				F2B4BD6B25AE59F9003E524F /* Walk.swift in Sources */,
+				F2B4BD8425AE5CCE003E524F /* AppRouter.swift in Sources */,
+				F2B4BD5B25AE59F9003E524F /* SettingsActions.swift in Sources */,
+				F2B4BD6C25AE59F9003E524F /* AppReducer.swift in Sources */,
+				F2B4BD6F25AE59F9003E524F /* SettingsReducer.swift in Sources */,
+				F2B4BD5825AE59F9003E524F /* NavigationState.swift in Sources */,
+				F2B4BD6625AE59F9003E524F /* WelcomeController.swift in Sources */,
+				F2B4BD6725AE59F9003E524F /* ProfileController.swift in Sources */,
+				F2B4BD8725AE5CF0003E524F /* DogManager.swift in Sources */,
+				F2B4BD1D25AE59BC003E524F /* AppDelegate.swift in Sources */,
+				F2B4BD6025AE59F9003E524F /* WalkHistoryCell.swift in Sources */,
+				F2B4BD5925AE59F9003E524F /* DogState.swift in Sources */,
+				F2B4BD6D25AE59F9003E524F /* NavigationReducer.swift in Sources */,
+				F2B4BD6A25AE59F9003E524F /* Profile.swift in Sources */,
+				F2B4BD5C25AE59F9003E524F /* DogActions.swift in Sources */,
+				F2B4BD6E25AE59F9003E524F /* DogReducer.swift in Sources */,
+				F2B4BD6525AE59F9003E524F /* MyDogsController.swift in Sources */,
+				F2B4BD6425AE59F9003E524F /* DogCell.swift in Sources */,
+				F2B4BD5F25AE59F9003E524F /* DogController.swift in Sources */,
+				F2B4BD5D25AE59F9003E524F /* NavigationActions.swift in Sources */,
+				F2B4BD6325AE59F9003E524F /* ColorTableController.swift in Sources */,
+				F2B4BD7D25AE5BDD003E524F /* GestureRecognizerManager.swift in Sources */,
+				F2B4BD5A25AE59F9003E524F /* State.swift in Sources */,
+				F2B4BD6225AE59F9003E524F /* ColorCell.swift in Sources */,
+				F2B4BD6925AE59F9003E524F /* Dog.swift in Sources */,
+				F2B4BD5E25AE59F9003E524F /* DeviceActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2B4BD2225AE59BC003E524F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B4BD2325AE59BC003E524F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2B4BD2725AE59BE003E524F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B4BD2825AE59BE003E524F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2B4BD2B25AE59BE003E524F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2B4BD2C25AE59BE003E524F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2B4BD2E25AE59BE003E524F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FE09C7EC3FE68E52050935 /* Pods-goDogRx.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZB8X3995T;
+				INFOPLIST_FILE = goDogRx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.goDogRx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2B4BD2F25AE59BE003E524F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702755B10CB168CCA72903C1 /* Pods-goDogRx.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZB8X3995T;
+				INFOPLIST_FILE = goDogRx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.goDogRx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2B4BD1425AE59BC003E524F /* Build configuration list for PBXProject "goDogRx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B4BD2B25AE59BE003E524F /* Debug */,
+				F2B4BD2C25AE59BE003E524F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B4BD2D25AE59BE003E524F /* Build configuration list for PBXNativeTarget "goDogRx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B4BD2E25AE59BE003E524F /* Debug */,
+				F2B4BD2F25AE59BE003E524F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2B4BD1125AE59BC003E524F /* Project object */;
+}
